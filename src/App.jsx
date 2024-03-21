@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-function App() {
+function App() { //ESTE EJERCICIO CONSISTE EN TRAER LOS DATOS DE PERSONAJES DE LA API, LUEGO OBTENER DE LA URL EL NUMERO DEL PERSONAJE PARA OBTENER SU DETALLE, LUEGO UN INPUT PARA HACER UN SEARCH A LA API Y ACTUALIZAR EL ESTADO Y POR ULTIMO DOS BOTONES PARA IR A LA SIGUIENTE PAGINA O LA ANTERIOR, USANDO LAS URL QUE VIENEN EN EL OBJETO DE LA API 
   const [estado, setEstado] = useState([]);
   const [current, setCurrent] = useState(null);
   const [detalle, setDetalle] = useState([]);
@@ -74,6 +74,7 @@ function App() {
 
 
 console.log(page)
+console.log(current)
   return (
     <>
       <form onSubmit={handleSubmit}>
